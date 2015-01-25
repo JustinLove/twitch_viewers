@@ -10,10 +10,16 @@
   "identifier": "com.wondible.pa.twitch_viewers",
   "priority": 100,
   "scenes": {
+    "live_game": [
+      "coui://ui/mods/twitch_viewers/live_game.js"
+    ],
     "live_game_options_bar": [
       "https://ttv-api.s3.amazonaws.com/twitch.min.js",
-      "coui://ui/mods/twitch_viewers/twitch_viewers.css",
-      "coui://ui/mods/twitch_viewers/twitch_viewers.js"
+      "coui://ui/mods/twitch_viewers/live_game_options_bar.css",
+      "coui://ui/mods/twitch_viewers/live_game_options_bar.js"
+    ],
+    "settings": [
+      "coui://ui/mods/twitch_viewers/settings.js"
     ]
   },
   "signature": "not yet implemented",
