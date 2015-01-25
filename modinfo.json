@@ -1,0 +1,22 @@
+{
+  "author": "wondible",
+  "build": "76766",
+  "category": ["ui", "twitch", "in-game"],
+  "context": "client",
+  "date": "2015/01/25",
+  "description": "Display the twitch viewer count",
+  "display_name": "Twitch Viewers",
+  "forum": null,
+  "identifier": "com.wondible.pa.twitch_viewers",
+  "priority": 100,
+  "scenes": {
+    "live_game_options_bar": [
+      "https://ttv-api.s3.amazonaws.com/twitch.min.js",
+      "coui://ui/mods/twitch_viewers/twitch_viewers.css",
+      "coui://ui/mods/twitch_viewers/twitch_viewers.js"
+    ]
+  },
+  "signature": "not yet implemented",
+  "version": "0.1.0"
+}
+
