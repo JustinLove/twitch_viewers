@@ -28,7 +28,7 @@ Twitch.init({clientId: 'YOUR_CLIENT_ID_HERE'}, function(error, status) {
     tick()
 
     var $tw = $('<div id="twitch_viewers" data-bind="text: twitchViewers, visible: twitchStreamLive"></div>')
-    $tw.insertAfter('.div_uberbar_toggle_cont')
+    $('.div_ingame_options_bar_cont').prepend($tw)
   }
 
   handlers['twitch_viewers_twitch_stream'] = function(stream) {
