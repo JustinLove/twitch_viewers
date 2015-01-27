@@ -1,8 +1,5 @@
 # Twitch Viewers
 
-Display the twitch viewer count
+Display the twitch viewer count in-game.
 
-## Features
-
-- Rainbows
-- Unicorns
+This uses an un-authenciated public API, but you do need to enter your twitch username in the settings so it knows which channel to check.
