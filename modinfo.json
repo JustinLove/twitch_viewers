@@ -1,12 +1,13 @@
 {
   "author": "wondible",
-  "build": "76766",
+  "build": "77725",
   "category": ["ui", "twitch", "in-game"],
   "context": "client",
-  "date": "2015/01/27",
+  "date": "2015/02/04",
   "description": "Display the twitch viewer count in-game",
   "display_name": "Twitch Viewers",
-  "forum": null,
+  "forum": "https://forums.uberent.com/threads/rel-twitch-viewers.67762/",
+  "icon": "http://wondible.com/pa/icons/twitch_viewers.png",
   "identifier": "com.wondible.pa.twitch_viewers",
   "priority": 100,
   "scenes": {
@@ -23,6 +24,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "0.1.0"
+  "version": "1.0.0"
 }
 
