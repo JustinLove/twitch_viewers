@@ -1,4 +1,4 @@
-model.twitchName = ko.observable('').extend({session: 'twitch_name'})
+model.twitchName = ko.observable('').extend({session: 'twitchname'})
 model.twitchStream = function() {
   if (model.twitchName() && model.twitchName() != '') {
     return model.twitchName()
