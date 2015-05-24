@@ -1,8 +1,12 @@
 #twitch_viewers {
   padding: 4px 8px 2px;
-  background: #6441A5;
+  background: #444;
   border: 1px solid #B9A3E3;
   margin: 0px 0px 0px 4px;
   box-shadow: 0px 0px 12px #B9A3E3;
   text-shadow: 0px 0px 10px #fff;
+}
+
+#twitch_viewers.twitch_viewers_live {
+  background: #6441A5;
 }
