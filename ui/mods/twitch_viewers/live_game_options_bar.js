@@ -31,7 +31,7 @@ Twitch.init({clientId: 'YOUR_CLIENT_ID_HERE'}, function(error, status) {
     queryStream()
     tick()
 
-    var $tw = $('<div id="twitch_viewers" data-bind="text: twitchViewers, css: { twitch_viewers_live: twitchStreamLive }, visible: twitchStream, click: twitchViewersPoll"></div>')
+    var $tw = $('<div id="twitch_viewers" class="btn_ingame_options btn_std_ix" data-bind="text: twitchViewers, css: { twitch_viewers_live: twitchStreamLive }, visible: twitchStream, click: twitchViewersPoll, tooltip: \'Twitch Viewers (click to poll)\'"></div>')
     $('.div_ingame_options_bar_cont').prepend($tw)
   }
 

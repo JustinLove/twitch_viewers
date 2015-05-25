@@ -2,6 +2,7 @@
 
 - Use own twitch name setting (setting server tab)
 - Poll once on game start, stop if not live.  Click to poll.
+- Add tooltip and better match standard option bar style.
 
 ## 1.1.0
 
