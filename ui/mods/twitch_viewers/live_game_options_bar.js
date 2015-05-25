@@ -10,7 +10,7 @@ Twitch.init({clientId: 'YOUR_CLIENT_ID_HERE'}, function(error, status) {
           model.twitchViewers(data.stream.viewers.toString())
         } else {
           model.twitchStreamLive(false)
-          model.twitchViewers('-')
+          model.twitchViewers('TV')
         }
         console.log(model.twitchViewers())
       })
@@ -20,14 +20,18 @@ Twitch.init({clientId: 'YOUR_CLIENT_ID_HERE'}, function(error, status) {
     api.Panel.message(api.Panel.parentId, 'update_twitch_viewers_twitch_stream')
   }
   var tick = function() {
-    poll()
+    if (model.twitchStreamLive()) {
+      poll()
+    }
     setTimeout(tick, 60000)
   }
+  model.twitchViewersPoll = poll
+
   if (!error) {
     queryStream()
     tick()
 
-    var $tw = $('<div id="twitch_viewers" data-bind="text: twitchViewers, css: { twitch_viewers_live: twitchStreamLive }, visible: twitchStream"></div>')
+    var $tw = $('<div id="twitch_viewers" data-bind="text: twitchViewers, css: { twitch_viewers_live: twitchStreamLive }, visible: twitchStream, click: twitchViewersPoll"></div>')
     $('.div_ingame_options_bar_cont').prepend($tw)
   }
 
