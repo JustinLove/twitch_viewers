@@ -1,3 +1,7 @@
+## 2.0.1
+
+- Bump build number circa titans
+
 ## 2.0.0
 
 - Use own twitch name setting (setting server tab)
